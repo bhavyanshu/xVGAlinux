@@ -1,6 +1,6 @@
 #!/bin/bash       
-echo 
-"#title           :xrandrVGA.sh
+echo "
+#title           :xrandrVGA.sh
 #description     :Bash script to provide resolution support for external monitors (VGA 15 Pin Cable). Requires xorg.
 #author		 :Bhavyanshu Parasher (bhavyanshu.spl@gmail.com)
 #date            :20130710
