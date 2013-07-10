@@ -22,7 +22,9 @@ Installation
 
 2) cd into the directory of this project.
 
-3) Run in terminal "sh xrandrVGA.sh". 
+3) Run in terminal "chmod +x xrandrVGA.sh"
+
+4) Run in terminal "sh xrandrVGA.sh". 
 
 
 Contact
