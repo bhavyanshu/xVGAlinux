@@ -1,4 +1,14 @@
-#!/bin/bash
+#!/bin/bash       
+echo 
+"#title           :xrandrVGA.sh
+#description     :Bash script to provide resolution support for external monitors (VGA 15 Pin Cable). Requires xorg.
+#author		 :Bhavyanshu Parasher (bhavyanshu.spl@gmail.com)
+#date            :20130710
+#version         :0.1    
+#usage		 :bash xrandrVGA.sh or (sh xrandrVGA.sh)
+#notes           :Refer to the README for more info or visit github project page (https://github.com/bhavyanshu/xVGAlinux).
+#bash_version    :GNU bash, version 4.2.37(1)-release
+#==============================================================================#"
 
 echo "Checking if Xorg exists..."
 sleep .5
