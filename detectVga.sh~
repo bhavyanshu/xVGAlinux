@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+if [ "xrandr -q | egrep 'VGA.* disconnected'" ]; then
+echo "VGA is disconnected!"
+fi
