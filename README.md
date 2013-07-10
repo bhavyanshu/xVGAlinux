@@ -19,7 +19,9 @@ Xorg and xrandr.
 Installation
 ------------
 1) Download this project. 
+
 2) cd into the directory of this project.
+
 3) Run in terminal "sh xrandrVGA.sh". 
 
 
