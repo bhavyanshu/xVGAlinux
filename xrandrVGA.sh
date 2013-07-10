@@ -26,7 +26,7 @@ if which Xorg >/dev/null; then
 			else
 				echo "VGA is found & is connected!"
 				sleep .5
-				echo `gtf 1024 768 60`
+				echo `gtf 1024 768 60` #Must find a way to detect best resolution for external monitor.
 				echo "Processing, please wait! Setting resolution for external to 1024x768"
 				echo `xrandr --newmode "1024x768_60.00"  64.11  1024 1080 1184 1344  768 769 772 795  -HSync +Vsync`
 				sleep .5	
