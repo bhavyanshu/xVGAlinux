@@ -17,7 +17,7 @@ text() { #{{{
   case ${color} in
     red    ) tput setaf 1 ; tput bold ;; #Denotes error
     green  ) tput setaf 2 ; tput bold ;; #Denotes everything okay
-    yellow ) tput setaf 3 ; tput bold ;; #Not in use
+    yellow ) tput setaf 3 ; tput bold ;; #Denotes "You gotta wait!"
     blue   ) tput setaf 4 ; tput bold ;; #Not is use
     grey   ) tput setaf 5 ;;		 #Not is use	
   esac
@@ -44,10 +44,10 @@ if which Xorg >/dev/null; then
 				sleep .5
 				echo `gtf 1024 768 60`  # We can also use cvt instead. Same output is derived from cvt.
 							# 60 is the refresh rate. Must find a way to detect best resolution for external monitor. 
-				echo "Processing, please wait! Setting resolution for external to 1024x768"
+				echo "Processing, please wait! Setting resolution for external to 1024x768."
 				echo `xrandr --newmode "1024x768_60.00"  64.11  1024 1080 1184 1344  768 769 772 795  -HSync +Vsync`
 				sleep .5	
-				echo "xrandr addmode"
+				echo "xrandr addmode for 1024x768."
 				echo `xrandr --addmode VGA1 1024x768_60.00`
 				sleep .5
 				echo "";text yellow "xrandr processing output, please wait!"
@@ -56,7 +56,7 @@ if which Xorg >/dev/null; then
 				echo "";text green "Resolution 1024x768 set on external monitor."
 			fi 
 	else
-		echo "";text red "xrandr not found. Please make sure you have xrandr"
+		echo "";text red "xrandr not found. Please make sure you have xrandr."
 	fi
 else
     echo "";text red "Xorg does not exist. This program only supports Xorg."
