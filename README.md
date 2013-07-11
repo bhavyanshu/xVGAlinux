@@ -18,13 +18,13 @@ Xorg and xrandr.
 
 Installation
 ------------
-1) Download this project. 
+1) Download this project. Connect your laptop to external monitor using 15 pin VGA cable. Make sure it is properly connected.
 
-2) cd into the directory of this project.
+2) "cd" into the directory of this project.
 
-3) Run in terminal "chmod +x xrandrVGA.sh"
+3) Run in terminal "chmod +x xrandrVGA.sh". This will give executable permissions to the bash script.
 
-4) Run in terminal "sh xrandrVGA.sh". 
+4) Run in terminal "sh xrandrVGA.sh". If in case there are errors, trying setting a different resolution in the script.
 
 
 Contact
