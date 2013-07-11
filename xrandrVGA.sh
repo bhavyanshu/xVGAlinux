@@ -26,7 +26,7 @@ text() { #{{{
 } #}}} 
 
 #Main program
-echo "\nChecking if Xorg exists..."
+echo "Checking if Xorg exists..."
 sleep .5
 if which Xorg >/dev/null; then
 	echo "Xorg found. Continuing.."
@@ -50,7 +50,7 @@ if which Xorg >/dev/null; then
 				echo "xrandr addmode"
 				echo `xrandr --addmode VGA1 1024x768_60.00`
 				sleep .5
-				echo "xrandr processing output, please wait!"
+				echo "";text yellow "xrandr processing output, please wait!"
 				echo `xrandr --output VGA1 --mode 1024x768_60.00`
 				sleep .8
 				echo "";text green "Resolution 1024x768 set on external monitor."
