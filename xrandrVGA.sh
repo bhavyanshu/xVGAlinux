@@ -36,7 +36,9 @@ if which Xorg >/dev/null; then
 	if which xrandr >/dev/null; then
 		echo "xrandr found. Continuing.."
 		echo `xrandr -q | egrep 'VGA.* disconnected'`
-			if [ `xrandr -q | egrep 'VGA.* connected'`="" ] 
+		VARIABLE=$(xrandr -q | egrep 'VGA.* connected');
+			#if [[ `xrandr -q | egrep 'VGA.* connected'`="" ]]
+			if [ "${VARIABLE:-0}" == 0 ]
 			then
 				echo "";text red "VGA is disconnected. Please check the cable connecting to your external monitor. "
 			else
